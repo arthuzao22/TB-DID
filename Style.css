@@ -1,33 +1,33 @@
 .header {
     grid-area: header;
-    background-color: blue;
-    padding: 2%;
+    background-color: #FF8733;
+    padding: 0.7%;
     /* Adicione padding para melhorar a aparência */
 }
 
 .banner {
     grid-area: banner;
     background-color: beige;
-    padding: 2%;
+    padding: 0.%;
     /* Adicione padding para melhorar a aparência */
 }
 
 .footer {
     grid-area: footer;
-    background-color: brown;
-    padding: 2%;
+    background-color: #FF8733;
+    padding: 1.3%;
     /* Adicione padding para melhorar a aparência */
 }
 
 .burguer {
     /* background-color: aqua; */
     grid-area: burguer;
-    padding: 2%;
+    padding: 0.7%;
     /* Adicione padding para melhorar a aparência */
 }
 
 .menu {
-    background-color: blueviolet;
+    background-color: #FF8733;
     grid-area: menu;
     padding: 2%;
     /* Adicione padding para melhorar a aparência */
@@ -43,9 +43,13 @@
             "menu banner banner"
             "menu burguer burguer"
             "footer footer footer";
-        gap: 0.5%;
+        gap: 0.2%;
         /* Adicione um espaço entre os itens do grid */
     }
+    .menutext{
+        margin: 5%;
+    }
+
     .burguer {
         display: flex;
         gap: 8px;
@@ -62,7 +66,7 @@
 @media (max-width: 425px) {
     .mae {
         grid-template-columns: 1fr;
-        /* Ajuste para uma única coluna em telas menores */
+        grid-template-rows: auto;
         grid-template-areas:
             "header"
             "banner"
@@ -70,6 +74,8 @@
             "menu"
             "footer";
     }
+
+    .logo-header {}
 
     .burguer {
         display: flex;
@@ -88,6 +94,8 @@ body {
     font-size: 1.25rem;
     margin: 0;
     padding: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
 }
 
 .burguer1,
@@ -96,11 +104,12 @@ body {
 .burguer4 {
     padding: 1%;
 }
+
 .burguer button {
     background-color: #4f4caf;
     border: none;
     color: white;
-    padding: 10px 20px;
+    width: 100%;
     text-align: center;
     text-decoration: none;
     display: inline-block;
@@ -109,7 +118,8 @@ body {
     transition-duration: 0.4s;
     cursor: pointer;
 }
-.text-bg{
+
+.text-bg {
     text-align: center;
 }
 
@@ -117,4 +127,31 @@ body {
     background-color: #45a049;
     color: white;
 }
+.text-principal{
+    margin: 1%;
+    text-align: center;
 
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 20px auto;
+    max-width: 600px;
+}
+li {
+    background-color: #fff;
+    padding: 10px 15px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+li:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
