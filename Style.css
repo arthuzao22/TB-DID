@@ -1,0 +1,120 @@
+.header {
+    grid-area: header;
+    background-color: blue;
+    padding: 2%;
+    /* Adicione padding para melhorar a aparência */
+}
+
+.banner {
+    grid-area: banner;
+    background-color: beige;
+    padding: 2%;
+    /* Adicione padding para melhorar a aparência */
+}
+
+.footer {
+    grid-area: footer;
+    background-color: brown;
+    padding: 2%;
+    /* Adicione padding para melhorar a aparência */
+}
+
+.burguer {
+    /* background-color: aqua; */
+    grid-area: burguer;
+    padding: 2%;
+    /* Adicione padding para melhorar a aparência */
+}
+
+.menu {
+    background-color: blueviolet;
+    grid-area: menu;
+    padding: 2%;
+    /* Adicione padding para melhorar a aparência */
+}
+
+@media (min-width: 1440px) {
+    .mae {
+        display: grid;
+        grid-template-columns: 0.5fr 2fr 1fr;
+        grid-template-rows: auto;
+        grid-template-areas:
+            "header header header"
+            "menu banner banner"
+            "menu burguer burguer"
+            "footer footer footer";
+        gap: 0.5%;
+        /* Adicione um espaço entre os itens do grid */
+    }
+    .burguer {
+        display: flex;
+        gap: 8px;
+    }
+
+    /* burguer 01 */
+    .img-bg1 {
+        width: 90%;
+        border-radius: 3px;
+    }
+}
+
+/* Estilos responsivos */
+@media (max-width: 425px) {
+    .mae {
+        grid-template-columns: 1fr;
+        /* Ajuste para uma única coluna em telas menores */
+        grid-template-areas:
+            "header"
+            "banner"
+            "burguer"
+            "menu"
+            "footer";
+    }
+
+    .burguer {
+        display: flex;
+        flex-direction: column;
+        gap: 0px;
+        /* Empilhar as divs verticalmente */
+    }
+
+    .img-bg1 {
+        width: 98%;
+        border-radius: 10px;
+    }
+}
+
+body {
+    font-size: 1.25rem;
+    margin: 0;
+    padding: 0;
+}
+
+.burguer1,
+.burguer2,
+.burguer3,
+.burguer4 {
+    padding: 1%;
+}
+.burguer button {
+    background-color: #4f4caf;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+.text-bg{
+    text-align: center;
+}
+
+.burguer button:hover {
+    background-color: #45a049;
+    color: white;
+}
+
