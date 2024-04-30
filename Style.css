@@ -1,6 +1,6 @@
 .header {
     grid-area: header;
-    background-color: #FF8733;
+    background-color: #474747;
     padding: 0.7%;
     /* Adicione padding para melhorar a aparência */
 }
@@ -8,7 +8,7 @@
 .banner {
     grid-area: banner;
     background-color: beige;
-    padding: 0.%;
+    padding: 0.2%;
     /* Adicione padding para melhorar a aparência */
 }
 
@@ -19,7 +19,7 @@
     /* Adicione padding para melhorar a aparência */
 }
 
-.burguer {
+.burguer, .lista-bg1 {
     /* background-color: aqua; */
     grid-area: burguer;
     padding: 0.7%;
@@ -43,7 +43,7 @@
             "menu banner banner"
             "menu burguer burguer"
             "footer footer footer";
-        gap: 0.2%;
+        gap: 0.0%;
         /* Adicione um espaço entre os itens do grid */
     }
     .menutext{
@@ -95,7 +95,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-
+    background-color: beige;
 }
 
 .burguer1,
@@ -106,15 +106,7 @@ body {
 }
 
 .burguer button {
-    background-color: #4f4caf;
-    border: none;
-    color: white;
     width: 100%;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
     transition-duration: 0.4s;
     cursor: pointer;
 }
@@ -128,9 +120,8 @@ body {
     color: white;
 }
 .text-principal{
-    margin: 1%;
+    margin: 0.5%;
     text-align: center;
-
 }
 
 h1 {
