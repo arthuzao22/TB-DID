@@ -48,7 +48,9 @@ body {
             "footer footer ";
         gap: 0.0%;
     }
-
+    .logo-img {
+        width: 21%;
+    }
     /*CARD*/
     .card {
         width: 100%;
@@ -73,6 +75,9 @@ body {
             "burguer burguer burguer"
             "footer footer footer";
         gap: 0.0%;
+    }
+    .logo-img {
+        width: 12%;
     }
 
     .menutext {
@@ -103,6 +108,9 @@ body {
             "footer";
     }
 
+    .logo-img {
+        width: 24%;
+    }
     .card {
         width: 100%;
         max-width: 100%;
@@ -216,5 +224,5 @@ body {
 }
 
 .logo-img {
-    width: 12%;
+    width: 13%;
 }
